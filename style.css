@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 80vw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 250px);
+  grid-auto-rows: 10px;
+  justify-content: center;
+}
+
+.card {
+  padding: 0;
+  margin: 12px 10px;
+  border-radius: 16px;
+  background-color: red;
+}
+
+.card-s {
+  grid-row-end: span 26;
+}
+
+.card-m {
+  grid-row-end: span 33;
+}
+
+.card-l {
+  grid-row-end: span 45;
+}
